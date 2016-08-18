@@ -19,7 +19,7 @@
     [super viewDidLoad];
  
     _starRatringView = [[LKStarRatingView alloc] initWithFrame:CGRectMake(15, (self.view.frame.size.height - 40) / 2, self.view.frame.size.width - 15 * 2, 40)];
-    _starRatringView.starEnable = NO;
+    _starRatringView.starEnable = YES;
     _starRatringView.starRating = 3;
     [self.view addSubview:_starRatringView];
 }

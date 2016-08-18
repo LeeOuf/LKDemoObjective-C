@@ -28,7 +28,8 @@
 }
 
 - (void)setStarRating:(NSInteger)starRating {
-    [self setSelectedBtns:starRating];
+    _starRating = starRating;
+    [self setSelectedBtns:_starRating];
 }
 
 //- (instancetype)initWithFrame:(CGRect)frame andStarNum:(int)starNum {
@@ -86,12 +87,16 @@
             }
             [button setImage:selectedImage forState:UIControlStateSelected];
             
+            button.enabled = _starEnable;
+            
             // 设置按钮动作
             [button addTarget:self action:@selector(starBtnClicked:) forControlEvents:UIControlEventTouchUpInside];
             
             [self addSubview:button];
             [_starBtnArrary addObject:button];
         }
+        
+        [self setSelectedBtns:_starRating];
     }
 }
 
