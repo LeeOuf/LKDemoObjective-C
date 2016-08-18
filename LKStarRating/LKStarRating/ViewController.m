@@ -39,8 +39,9 @@
 }
 
 - (void)dealloc {
-    _starRatringView.dataSource = nil;
-    _starRatringView.delegate = nil;
+    if (_starRatringView) {
+        _starRatringView = nil;
+    }
 }
 
 - (void)didReceiveMemoryWarning {
