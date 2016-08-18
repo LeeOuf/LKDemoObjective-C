@@ -9,9 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "LKStarRatingView.h"
 
-@interface ViewController : UIViewController<LKStarRatingViewDataSource, LKStarRatingViewDelegate> {
-    LKStarRatingView *starRatringView;
-}
-
+@interface ViewController : UIViewController<LKStarRatingViewDataSource, LKStarRatingViewDelegate>
+@property (nonatomic, strong) LKStarRatingView *starRatringView;
 @end
 

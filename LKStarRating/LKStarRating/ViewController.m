@@ -13,16 +13,30 @@
 @end
 
 @implementation ViewController
+@synthesize starRatringView = _starRatringView;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
  
-    starRatringView = [[LKStarRatingView alloc] initWithFrame:CGRectMake(15, (self.view.frame.size.height - 40) / 2, self.view.frame.size.width - 15 * 2, 40)];
-    starRatringView.dataSource = self;
-    starRatringView.delegate = self;
-    starRatringView.starEnable = NO;
-    starRatringView.starRating = 3;
-    [self.view addSubview:starRatringView];
+    _starRatringView = [[LKStarRatingView alloc] initWithFrame:CGRectMake(15, (self.view.frame.size.height - 40) / 2, self.view.frame.size.width - 15 * 2, 40)];
+    _starRatringView.starEnable = NO;
+    _starRatringView.starRating = 3;
+    [self.view addSubview:_starRatringView];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    _starRatringView.dataSource = self;
+    _starRatringView.delegate = self;
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    _starRatringView.dataSource = nil;
+    _starRatringView.delegate = nil;
+}
+
+- (void)dealloc {
+    _starRatringView.dataSource = nil;
+    _starRatringView.delegate = nil;
 }
 
 - (void)didReceiveMemoryWarning {
