@@ -25,11 +25,15 @@
 }
 
 - (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
     _starRatringView.dataSource = self;
     _starRatringView.delegate = self;
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    
     _starRatringView.dataSource = nil;
     _starRatringView.delegate = nil;
 }
