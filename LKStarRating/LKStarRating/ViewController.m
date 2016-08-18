@@ -17,10 +17,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
  
-    starRatringView = [[LKStarRatingView alloc] initWithFrame:CGRectMake(15, (self.view.frame.size.height - 40) / 2, self.view.frame.size.width - 15 * 2, 40) andStarNum:5];
-    starRatringView.starEnable = YES;
-    starRatringView.starRating = 3;
+    starRatringView = [[LKStarRatingView alloc] initWithFrame:CGRectMake(15, (self.view.frame.size.height - 40) / 2, self.view.frame.size.width - 15 * 2, 40)];
+    starRatringView.dataSource = self;
     starRatringView.delegate = self;
+    starRatringView.starEnable = NO;
+    starRatringView.starRating = 3;
     [self.view addSubview:starRatringView];
 }
 
@@ -29,7 +30,21 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)starRatingView:(LKStarRatingView *)starRatingView starRatingSelected:(NSInteger)index {
+- (NSInteger)numberOfStarsInStarRatingView:(LKStarRatingView *)starRatingView {
+    return 5;
+}
+
+- (UIImage *)starRatingView:(LKStarRatingView *)starRatingView unselectedImageForStarAtIndex:(NSInteger)index {
+    UIImage *image = [UIImage imageNamed:@"lk_star_empty"];
+    return image;
+}
+
+- (UIImage *)starRatingView:(LKStarRatingView *)starRatingView selectedImageForStarAtIndex:(NSInteger)index {
+    UIImage *image = [UIImage imageNamed:@"lk_star_full"];
+    return image;
+}
+
+- (void)starRatingView:(LKStarRatingView *)starRatingView didSelectStarAtIndex:(NSInteger)index {
     NSLog(@"Select %d star rating!", (int)index);
 }
 

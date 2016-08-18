@@ -15,6 +15,7 @@
 @implementation LKStarRatingView
 @synthesize starEnable = _starEnable;
 @synthesize starRating = _starRating;
+@synthesize dataSource = _dataSource;
 @synthesize delegate = _delegate;
 
 @synthesize starBtnArrary = _starBtnArrary;
@@ -30,37 +31,75 @@
     [self setSelectedBtns:starRating];
 }
 
-- (instancetype)initWithFrame:(CGRect)frame andStarNum:(int)starNum {
-    self = [super initWithFrame:frame];
-    if (self) {
+//- (instancetype)initWithFrame:(CGRect)frame andStarNum:(int)starNum {
+//    self = [super initWithFrame:frame];
+//    if (self) {
+//        _starBtnArrary = [NSMutableArray arrayWithCapacity:starNum];
+//        CGFloat starH = self.frame.size.height;
+//        
+//        for (int i = 0; i < starNum; i++) {
+//            UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+//            
+//            button.tag = i + 1;
+//            button.frame = CGRectMake((starH * 1.2) * i, 0, starH, starH);
+//            button.adjustsImageWhenHighlighted = NO;
+//            button.backgroundColor = [UIColor clearColor];
+//            [button setImage:[UIImage imageNamed:@"lk_star_empty"] forState:UIControlStateNormal];
+//            [button setImage:[UIImage imageNamed:@"lk_star_full"] forState:UIControlStateSelected];
+//            [button addTarget:self action:@selector(starBtnClicked:) forControlEvents:UIControlEventTouchUpInside];
+//            [self addSubview:button];
+//            
+//            [_starBtnArrary addObject:button];
+//        }
+//        
+//    }
+//    return self;
+//}
+
+- (void)layoutSubviews {
+    if (_dataSource && [_dataSource respondsToSelector:@selector(numberOfStarsInStarRatingView:)]) {
+        NSInteger starNum = [_dataSource numberOfStarsInStarRatingView:self];
         _starBtnArrary = [NSMutableArray arrayWithCapacity:starNum];
         CGFloat starH = self.frame.size.height;
+        
+        BOOL respondsToUnselectedImage = [_dataSource respondsToSelector:@selector(starRatingView:unselectedImageForStarAtIndex:)];
+        BOOL respondsToSelectedImage = [_dataSource respondsToSelector:@selector(starRatingView:selectedImageForStarAtIndex:)];
         
         for (int i = 0; i < starNum; i++) {
             UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
             
             button.tag = i + 1;
             button.frame = CGRectMake((starH * 1.2) * i, 0, starH, starH);
-//            button.adjustsImageWhenHighlighted = NO;
+            button.adjustsImageWhenHighlighted = NO;
             button.backgroundColor = [UIColor clearColor];
-            [button setImage:[UIImage imageNamed:@"lk_star_empty"] forState:UIControlStateNormal];
-            [button setImage:[UIImage imageNamed:@"lk_star_full"] forState:UIControlStateSelected];
-//            [button setImage:[UIImage imageNamed:@"lk_star_full"] forState:UIControlStateHighlighted];
-            [button addTarget:self action:@selector(starBtnClicked:) forControlEvents:UIControlEventTouchUpInside];
-            [self addSubview:button];
             
+            // 设置按钮状态对应样式
+            UIImage *unselectedImage = [UIImage imageNamed:@"lk_star_empty"];
+            if (respondsToUnselectedImage) {
+                unselectedImage = [_dataSource starRatingView:self unselectedImageForStarAtIndex:i];
+            }
+            [button setImage:unselectedImage forState:UIControlStateNormal];
+            
+            UIImage *selectedImage = [UIImage imageNamed:@"lk_star_full"];
+            if (respondsToSelectedImage) {
+                selectedImage = [_dataSource starRatingView:self selectedImageForStarAtIndex:i];
+            }
+            [button setImage:selectedImage forState:UIControlStateSelected];
+            
+            // 设置按钮动作
+            [button addTarget:self action:@selector(starBtnClicked:) forControlEvents:UIControlEventTouchUpInside];
+            
+            [self addSubview:button];
             [_starBtnArrary addObject:button];
         }
-        
     }
-    return self;
 }
 
 - (void)starBtnClicked:(UIButton *)sender {
     [self setSelectedBtns:sender.tag];
     
-    if (_delegate && [_delegate respondsToSelector:@selector(starRatingView:starRatingSelected:)]) {
-        [_delegate starRatingView:self starRatingSelected:sender.tag];
+    if (_delegate && [_delegate respondsToSelector:@selector(starRatingView:didSelectStarAtIndex:)]) {
+        [_delegate starRatingView:self didSelectStarAtIndex:sender.tag];
     }
 }
 

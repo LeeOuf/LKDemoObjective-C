@@ -9,10 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "LKStarRatingView.h"
 
-@interface ViewController : UIViewController<LKStarRatingViewDelegate> {
-
+@interface ViewController : UIViewController<LKStarRatingViewDataSource, LKStarRatingViewDelegate> {
     LKStarRatingView *starRatringView;
-    
 }
 
 @end
