@@ -71,7 +71,6 @@
             
             button.tag = i + 1;
             button.frame = CGRectMake((starH * 1.2) * i, 0, starH, starH);
-            button.adjustsImageWhenHighlighted = NO;
             button.backgroundColor = [UIColor clearColor];
             
             // 设置按钮状态对应样式
@@ -85,7 +84,8 @@
             if (respondsToSelectedImage) {
                 selectedImage = [_dataSource starRatingView:self selectedImageForStarAtIndex:i];
             }
-            [button setImage:selectedImage forState:UIControlStateSelected];
+            [button setImage:selectedImage forState:UIControlStateSelected ];
+            [button setImage:selectedImage forState:UIControlStateSelected | UIControlStateHighlighted];
             
             button.enabled = _starEnable;
             

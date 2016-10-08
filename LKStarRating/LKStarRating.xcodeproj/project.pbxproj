@@ -12,7 +12,6 @@
 		A26284CC1D658BC30042F9D3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A26284CB1D658BC30042F9D3 /* ViewController.m */; };
 		A26284CF1D658BC30042F9D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A26284CD1D658BC30042F9D3 /* Main.storyboard */; };
 		A26284D11D658BC30042F9D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A26284D01D658BC30042F9D3 /* Assets.xcassets */; };
-		A26284D41D658BC30042F9D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A26284D21D658BC30042F9D3 /* LaunchScreen.storyboard */; };
 		A26284DF1D658BC30042F9D3 /* LKStarRatingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A26284DE1D658BC30042F9D3 /* LKStarRatingTests.m */; };
 		A26284EA1D658BC30042F9D3 /* LKStarRatingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A26284E91D658BC30042F9D3 /* LKStarRatingUITests.m */; };
 		A26284FC1D658D040042F9D3 /* LKStarRatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = A26284FB1D658D040042F9D3 /* LKStarRatingView.m */; };
@@ -44,7 +43,6 @@
 		A26284CB1D658BC30042F9D3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A26284CE1D658BC30042F9D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A26284D01D658BC30042F9D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A26284D31D658BC30042F9D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A26284D51D658BC30042F9D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A26284DA1D658BC30042F9D3 /* LKStarRatingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LKStarRatingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A26284DE1D658BC30042F9D3 /* LKStarRatingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKStarRatingTests.m; sourceTree = "<group>"; };
@@ -104,16 +102,10 @@
 		A26284C31D658BC30042F9D3 /* LKStarRating */ = {
 			isa = PBXGroup;
 			children = (
-				A26284C71D658BC30042F9D3 /* AppDelegate.h */,
-				A26284C81D658BC30042F9D3 /* AppDelegate.m */,
 				A26284CA1D658BC30042F9D3 /* ViewController.h */,
 				A26284CB1D658BC30042F9D3 /* ViewController.m */,
 				A26284FA1D658D040042F9D3 /* LKStarRatingView.h */,
 				A26284FB1D658D040042F9D3 /* LKStarRatingView.m */,
-				A26284CD1D658BC30042F9D3 /* Main.storyboard */,
-				A26284D01D658BC30042F9D3 /* Assets.xcassets */,
-				A26284D21D658BC30042F9D3 /* LaunchScreen.storyboard */,
-				A26284D51D658BC30042F9D3 /* Info.plist */,
 				A26284C41D658BC30042F9D3 /* Supporting Files */,
 			);
 			path = LKStarRating;
@@ -122,6 +114,11 @@
 		A26284C41D658BC30042F9D3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A26284C71D658BC30042F9D3 /* AppDelegate.h */,
+				A26284C81D658BC30042F9D3 /* AppDelegate.m */,
+				A26284CD1D658BC30042F9D3 /* Main.storyboard */,
+				A26284D01D658BC30042F9D3 /* Assets.xcassets */,
+				A26284D51D658BC30042F9D3 /* Info.plist */,
 				A26284C51D658BC30042F9D3 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -248,7 +245,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A26284D41D658BC30042F9D3 /* LaunchScreen.storyboard in Resources */,
 				A26284D11D658BC30042F9D3 /* Assets.xcassets in Resources */,
 				A26284CF1D658BC30042F9D3 /* Main.storyboard in Resources */,
 			);
@@ -320,14 +316,6 @@
 				A26284CE1D658BC30042F9D3 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		A26284D21D658BC30042F9D3 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A26284D31D658BC30042F9D3 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -502,6 +490,7 @@
 				A26284F01D658BC30042F9D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A26284F11D658BC30042F9D3 /* Build configuration list for PBXNativeTarget "LKStarRatingTests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +499,7 @@
 				A26284F31D658BC30042F9D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A26284F41D658BC30042F9D3 /* Build configuration list for PBXNativeTarget "LKStarRatingUITests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +508,7 @@
 				A26284F61D658BC30042F9D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
