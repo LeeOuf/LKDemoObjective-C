@@ -1,0 +1,597 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BD387A4F229291DF00DE17CC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BD387A4E229291DF00DE17CC /* AppDelegate.m */; };
+		BD387A52229291DF00DE17CC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD387A51229291DF00DE17CC /* ViewController.m */; };
+		BD387A57229291E100DE17CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD387A56229291E100DE17CC /* Assets.xcassets */; };
+		BD387A5D229291E100DE17CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BD387A5C229291E100DE17CC /* main.m */; };
+		BD387A67229291E200DE17CC /* LKPagingViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BD387A66229291E200DE17CC /* LKPagingViewTests.m */; };
+		BD387A72229291E200DE17CC /* LKPagingViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BD387A71229291E200DE17CC /* LKPagingViewUITests.m */; };
+		BD387A812292925B00DE17CC /* LKPagingView.m in Sources */ = {isa = PBXBuildFile; fileRef = BD387A802292925B00DE17CC /* LKPagingView.m */; };
+		BD387A852292944F00DE17CC /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = BD387A842292944F00DE17CC /* UIView+Extension.m */; };
+		BD387A882292952500DE17CC /* LKPagingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = BD387A872292952500DE17CC /* LKPagingScrollView.m */; };
+		BD387A8F2292967000DE17CC /* NSArray+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = BD387A8E2292967000DE17CC /* NSArray+Extension.m */; };
+		BD387AD422929F8F00DE17CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD387AD222929F8F00DE17CC /* Main.storyboard */; };
+		BD387AD522929F8F00DE17CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD387AD322929F8F00DE17CC /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BD387A63229291E200DE17CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD387A42229291DF00DE17CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD387A49229291DF00DE17CC;
+			remoteInfo = LKPagingView;
+		};
+		BD387A6E229291E200DE17CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD387A42229291DF00DE17CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD387A49229291DF00DE17CC;
+			remoteInfo = LKPagingView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BD387A4A229291DF00DE17CC /* LKPagingView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LKPagingView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD387A4D229291DF00DE17CC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BD387A4E229291DF00DE17CC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BD387A50229291DF00DE17CC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BD387A51229291DF00DE17CC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BD387A56229291E100DE17CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BD387A5B229291E100DE17CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD387A5C229291E100DE17CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BD387A62229291E200DE17CC /* LKPagingViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LKPagingViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD387A66229291E200DE17CC /* LKPagingViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKPagingViewTests.m; sourceTree = "<group>"; };
+		BD387A68229291E200DE17CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD387A6D229291E200DE17CC /* LKPagingViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LKPagingViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD387A71229291E200DE17CC /* LKPagingViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKPagingViewUITests.m; sourceTree = "<group>"; };
+		BD387A73229291E200DE17CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD387A7F2292925B00DE17CC /* LKPagingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LKPagingView.h; sourceTree = "<group>"; };
+		BD387A802292925B00DE17CC /* LKPagingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKPagingView.m; sourceTree = "<group>"; };
+		BD387A832292944F00DE17CC /* UIView+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		BD387A842292944F00DE17CC /* UIView+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		BD387A862292952500DE17CC /* LKPagingScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LKPagingScrollView.h; sourceTree = "<group>"; };
+		BD387A872292952500DE17CC /* LKPagingScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKPagingScrollView.m; sourceTree = "<group>"; };
+		BD387A8D2292967000DE17CC /* NSArray+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+Extension.h"; sourceTree = "<group>"; };
+		BD387A8E2292967000DE17CC /* NSArray+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Extension.m"; sourceTree = "<group>"; };
+		BD387AD222929F8F00DE17CC /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		BD387AD322929F8F00DE17CC /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BD387A47229291DF00DE17CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD387A5F229291E200DE17CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD387A6A229291E200DE17CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BD387A41229291DF00DE17CC = {
+			isa = PBXGroup;
+			children = (
+				BD387A4C229291DF00DE17CC /* LKPagingView */,
+				BD387A65229291E200DE17CC /* LKPagingViewTests */,
+				BD387A70229291E200DE17CC /* LKPagingViewUITests */,
+				BD387A4B229291DF00DE17CC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BD387A4B229291DF00DE17CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BD387A4A229291DF00DE17CC /* LKPagingView.app */,
+				BD387A62229291E200DE17CC /* LKPagingViewTests.xctest */,
+				BD387A6D229291E200DE17CC /* LKPagingViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BD387A4C229291DF00DE17CC /* LKPagingView */ = {
+			isa = PBXGroup;
+			children = (
+				BD387A892292964700DE17CC /* Extension */,
+				BD387A7F2292925B00DE17CC /* LKPagingView.h */,
+				BD387A802292925B00DE17CC /* LKPagingView.m */,
+				BD387A862292952500DE17CC /* LKPagingScrollView.h */,
+				BD387A872292952500DE17CC /* LKPagingScrollView.m */,
+				BD387A50229291DF00DE17CC /* ViewController.h */,
+				BD387A51229291DF00DE17CC /* ViewController.m */,
+				BD387A4D229291DF00DE17CC /* AppDelegate.h */,
+				BD387A4E229291DF00DE17CC /* AppDelegate.m */,
+				BD387AD322929F8F00DE17CC /* LaunchScreen.storyboard */,
+				BD387AD222929F8F00DE17CC /* Main.storyboard */,
+				BD387A56229291E100DE17CC /* Assets.xcassets */,
+				BD387A5B229291E100DE17CC /* Info.plist */,
+				BD387A5C229291E100DE17CC /* main.m */,
+			);
+			path = LKPagingView;
+			sourceTree = "<group>";
+		};
+		BD387A65229291E200DE17CC /* LKPagingViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				BD387A66229291E200DE17CC /* LKPagingViewTests.m */,
+				BD387A68229291E200DE17CC /* Info.plist */,
+			);
+			path = LKPagingViewTests;
+			sourceTree = "<group>";
+		};
+		BD387A70229291E200DE17CC /* LKPagingViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BD387A71229291E200DE17CC /* LKPagingViewUITests.m */,
+				BD387A73229291E200DE17CC /* Info.plist */,
+			);
+			path = LKPagingViewUITests;
+			sourceTree = "<group>";
+		};
+		BD387A892292964700DE17CC /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BD387A832292944F00DE17CC /* UIView+Extension.h */,
+				BD387A842292944F00DE17CC /* UIView+Extension.m */,
+				BD387A8D2292967000DE17CC /* NSArray+Extension.h */,
+				BD387A8E2292967000DE17CC /* NSArray+Extension.m */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BD387A49229291DF00DE17CC /* LKPagingView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD387A76229291E200DE17CC /* Build configuration list for PBXNativeTarget "LKPagingView" */;
+			buildPhases = (
+				BD387A46229291DF00DE17CC /* Sources */,
+				BD387A47229291DF00DE17CC /* Frameworks */,
+				BD387A48229291DF00DE17CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LKPagingView;
+			productName = LKPagingView;
+			productReference = BD387A4A229291DF00DE17CC /* LKPagingView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BD387A61229291E200DE17CC /* LKPagingViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD387A79229291E200DE17CC /* Build configuration list for PBXNativeTarget "LKPagingViewTests" */;
+			buildPhases = (
+				BD387A5E229291E200DE17CC /* Sources */,
+				BD387A5F229291E200DE17CC /* Frameworks */,
+				BD387A60229291E200DE17CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BD387A64229291E200DE17CC /* PBXTargetDependency */,
+			);
+			name = LKPagingViewTests;
+			productName = LKPagingViewTests;
+			productReference = BD387A62229291E200DE17CC /* LKPagingViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BD387A6C229291E200DE17CC /* LKPagingViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD387A7C229291E200DE17CC /* Build configuration list for PBXNativeTarget "LKPagingViewUITests" */;
+			buildPhases = (
+				BD387A69229291E200DE17CC /* Sources */,
+				BD387A6A229291E200DE17CC /* Frameworks */,
+				BD387A6B229291E200DE17CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BD387A6F229291E200DE17CC /* PBXTargetDependency */,
+			);
+			name = LKPagingViewUITests;
+			productName = LKPagingViewUITests;
+			productReference = BD387A6D229291E200DE17CC /* LKPagingViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BD387A42229291DF00DE17CC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Li,Ke";
+				TargetAttributes = {
+					BD387A49229291DF00DE17CC = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					BD387A61229291E200DE17CC = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = BD387A49229291DF00DE17CC;
+					};
+					BD387A6C229291E200DE17CC = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = BD387A49229291DF00DE17CC;
+					};
+				};
+			};
+			buildConfigurationList = BD387A45229291DF00DE17CC /* Build configuration list for PBXProject "LKPagingView" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BD387A41229291DF00DE17CC;
+			productRefGroup = BD387A4B229291DF00DE17CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BD387A49229291DF00DE17CC /* LKPagingView */,
+				BD387A61229291E200DE17CC /* LKPagingViewTests */,
+				BD387A6C229291E200DE17CC /* LKPagingViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BD387A48229291DF00DE17CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD387AD522929F8F00DE17CC /* LaunchScreen.storyboard in Resources */,
+				BD387A57229291E100DE17CC /* Assets.xcassets in Resources */,
+				BD387AD422929F8F00DE17CC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD387A60229291E200DE17CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD387A6B229291E200DE17CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BD387A46229291DF00DE17CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD387A852292944F00DE17CC /* UIView+Extension.m in Sources */,
+				BD387A52229291DF00DE17CC /* ViewController.m in Sources */,
+				BD387A812292925B00DE17CC /* LKPagingView.m in Sources */,
+				BD387A5D229291E100DE17CC /* main.m in Sources */,
+				BD387A4F229291DF00DE17CC /* AppDelegate.m in Sources */,
+				BD387A882292952500DE17CC /* LKPagingScrollView.m in Sources */,
+				BD387A8F2292967000DE17CC /* NSArray+Extension.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD387A5E229291E200DE17CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD387A67229291E200DE17CC /* LKPagingViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD387A69229291E200DE17CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD387A72229291E200DE17CC /* LKPagingViewUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BD387A64229291E200DE17CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD387A49229291DF00DE17CC /* LKPagingView */;
+			targetProxy = BD387A63229291E200DE17CC /* PBXContainerItemProxy */;
+		};
+		BD387A6F229291E200DE17CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD387A49229291DF00DE17CC /* LKPagingView */;
+			targetProxy = BD387A6E229291E200DE17CC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BD387A74229291E200DE17CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BD387A75229291E200DE17CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BD387A77229291E200DE17CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QP2N3N3XF7;
+				INFOPLIST_FILE = LKPagingView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.leeouf.LKPagingView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BD387A78229291E200DE17CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QP2N3N3XF7;
+				INFOPLIST_FILE = LKPagingView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.leeouf.LKPagingView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BD387A7A229291E200DE17CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QP2N3N3XF7;
+				INFOPLIST_FILE = LKPagingViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.leeouf.LKPagingViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LKPagingView.app/LKPagingView";
+			};
+			name = Debug;
+		};
+		BD387A7B229291E200DE17CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QP2N3N3XF7;
+				INFOPLIST_FILE = LKPagingViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.leeouf.LKPagingViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LKPagingView.app/LKPagingView";
+			};
+			name = Release;
+		};
+		BD387A7D229291E200DE17CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QP2N3N3XF7;
+				INFOPLIST_FILE = LKPagingViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.leeouf.LKPagingViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LKPagingView;
+			};
+			name = Debug;
+		};
+		BD387A7E229291E200DE17CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QP2N3N3XF7;
+				INFOPLIST_FILE = LKPagingViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.leeouf.LKPagingViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LKPagingView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BD387A45229291DF00DE17CC /* Build configuration list for PBXProject "LKPagingView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD387A74229291E200DE17CC /* Debug */,
+				BD387A75229291E200DE17CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD387A76229291E200DE17CC /* Build configuration list for PBXNativeTarget "LKPagingView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD387A77229291E200DE17CC /* Debug */,
+				BD387A78229291E200DE17CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD387A79229291E200DE17CC /* Build configuration list for PBXNativeTarget "LKPagingViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD387A7A229291E200DE17CC /* Debug */,
+				BD387A7B229291E200DE17CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD387A7C229291E200DE17CC /* Build configuration list for PBXNativeTarget "LKPagingViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD387A7D229291E200DE17CC /* Debug */,
+				BD387A7E229291E200DE17CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BD387A42229291DF00DE17CC /* Project object */;
+}
