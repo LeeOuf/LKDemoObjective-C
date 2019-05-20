@@ -113,18 +113,13 @@
 		BD387A4C229291DF00DE17CC /* LKPagingView */ = {
 			isa = PBXGroup;
 			children = (
+				BD387ADA2292A72100DE17CC /* Support Files */,
 				BD387A892292964700DE17CC /* Extension */,
-				BD387A7F2292925B00DE17CC /* LKPagingView.h */,
-				BD387A802292925B00DE17CC /* LKPagingView.m */,
-				BD387A862292952500DE17CC /* LKPagingScrollView.h */,
-				BD387A872292952500DE17CC /* LKPagingScrollView.m */,
+				BD387AD92292A6FF00DE17CC /* LKPagingView */,
 				BD387A50229291DF00DE17CC /* ViewController.h */,
 				BD387A51229291DF00DE17CC /* ViewController.m */,
 				BD387A4D229291DF00DE17CC /* AppDelegate.h */,
 				BD387A4E229291DF00DE17CC /* AppDelegate.m */,
-				BD387AD322929F8F00DE17CC /* LaunchScreen.storyboard */,
-				BD387AD222929F8F00DE17CC /* Main.storyboard */,
-				BD387A56229291E100DE17CC /* Assets.xcassets */,
 				BD387A5B229291E100DE17CC /* Info.plist */,
 				BD387A5C229291E100DE17CC /* main.m */,
 			);
@@ -158,6 +153,27 @@
 				BD387A8E2292967000DE17CC /* NSArray+Extension.m */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		BD387AD92292A6FF00DE17CC /* LKPagingView */ = {
+			isa = PBXGroup;
+			children = (
+				BD387A7F2292925B00DE17CC /* LKPagingView.h */,
+				BD387A802292925B00DE17CC /* LKPagingView.m */,
+				BD387A862292952500DE17CC /* LKPagingScrollView.h */,
+				BD387A872292952500DE17CC /* LKPagingScrollView.m */,
+			);
+			path = LKPagingView;
+			sourceTree = "<group>";
+		};
+		BD387ADA2292A72100DE17CC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BD387AD322929F8F00DE17CC /* LaunchScreen.storyboard */,
+				BD387AD222929F8F00DE17CC /* Main.storyboard */,
+				BD387A56229291E100DE17CC /* Assets.xcassets */,
+			);
+			path = "Support Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
